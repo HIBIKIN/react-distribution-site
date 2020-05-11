@@ -7,6 +7,7 @@ import {
     Route,
 } from "react-router-dom";
 import ResultPage from "./resultPage";
+import DownloadPage from "./downloadPage";
 
 const TopPage: FC = () => {
     return(
@@ -18,6 +19,9 @@ const TopPage: FC = () => {
                 </Route>
                 <Route path="/search/:keyword" exact>
                     <ResultPage />
+                </Route>
+                <Route path="/download/:keyword" exact>
+                    <DownloadPage />
                 </Route>
             </Switch>
         </Router>
